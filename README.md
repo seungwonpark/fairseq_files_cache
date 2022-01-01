@@ -1,5 +1,11 @@
 # fairseq_files_cache
-Code snippets for creating local cache of checkpoints provided within fairseq
+
+Tired of manually downloading gigabytes of checkpoints from `fairseq`, but have plenty of disk space to save them locally?
+
+This is a code snippet for creating local cache of checkpoints provided within fairseq. Features include:
+
+- Recursively grep URLs starting with `https://dl.fbaipublicfiles.com` in specific directory
+- Preserve directory structure of URL by creating corresponding directory before downloading
 
 ## Instruction
 

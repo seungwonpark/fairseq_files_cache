@@ -33,3 +33,4 @@ Finally, copy the `download_urls.sh` to desired directory and run as:
 ## Some TODOs
 
 - Checking file validity to make sure each file is completely downloaded
+- Check that all file URLs in fairseq start with `https://dl.fbaipublicfiles.com`

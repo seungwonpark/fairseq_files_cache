@@ -7,10 +7,10 @@ fi
 # follow directory structure of URL by mkdir
 for url in $(cat $1); do
     # get directory structure from url and strip domain
-    filepath=$(echo $url | sed -e 's/https:\/\/[^\/]*\///' | xargs dirname)
+    filepath=$(echo $url | sed -e 's/https:\/\/[^\/]*\///')
     echo "Downloading $url to $filepath"
     # create directory structure
-    # mkdir -p $(dirname $filepath)
+    mkdir -p $(dirname $filepath)
     # download file
-    # wget -O --no-verbose --show-progress $filepath $url
+    wget --no-verbose --show-progress -O $filepath $url
 done

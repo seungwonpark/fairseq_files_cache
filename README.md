@@ -15,6 +15,7 @@ Then, run the following `grep` command to save the list of file URLs to a text f
 ```bash
 grep -EoRh "https://dl.fbaipublicfiles.com[a-zA-Z0-9./?=_%:-]*" | sort -u > ~/textless_nlp_files.txt
 ```
+Output should look like the `textless_nlp_files.txt` file in this repository.
 
 Command description:
 - `grep -E`: use regex to find file URLs
